@@ -5,17 +5,27 @@ metadata:
   labels:
     app: node-mongo
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: node-mongo
+
   template:
     metadata:
       labels:
         app: node-mongo
     spec:
       containers:
-      - name: node-mongo
-        image: mandipkaur/nagp-node-app
-        ports:
-        - containerPort: 3000
+        - name: node-mongo
+          image: mandipkaur/nagp-node-app:04
+          env:
+            - name: MONGO_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: mongo-config
+                  key: MONGO_HOST
+            - name: MONGO_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: mongo-config
+                  key: MONGO_PORT
