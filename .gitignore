@@ -1,0 +1,92 @@
+# Node modules
+**/node_modules
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# Bower dependency directories
+bower_components/
+
+# Production build output
+dist/
+build/
+
+# Compiled source
+*.compiled.js
+*.compiled.ts
+*.compiled.tsx
+*.js.map
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn v2 PnP
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production
+
+# Temporary files
+temp
+*.tmp
+*.temp
+
+# VS Code directory and files
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+# Linux system files
+*~
+
+# IDEA files
+.idea/
+
+# Ignore specific test coverage directories
+**/coverage
+
+# Ignore project-specific build output
+projects/*/dist
+projects/*/build
+
+# Ignore local config files
+*.local.js
+*.local.json
+
+# Ignore specific IDE configuration files
+*.iml
+*.ipr
+*.iws
+
+# Ignore specific OS configuration files
+Thumbs.db
+.DS_Store
+
+# Ignore lock files
+package-lock.json
+yarn.lock
